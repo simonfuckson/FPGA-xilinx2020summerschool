@@ -1,0 +1,1197 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 18824
+License: Customer
+
+Current time: 	Thu Jul 30 10:01:24 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 19 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Simonfuckson
+User home directory: C:/Users/Simonfuckson
+User working directory: F:/FPGA/summerschool/Camera_Demo/Camera_Demo
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/xilinx/Vivado
+HDI_APPROOT: F:/xilinx/Vivado/2018.3
+RDI_DATADIR: F:/xilinx/Vivado/2018.3/data
+RDI_BINDIR: F:/xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Simonfuckson/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Simonfuckson/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Simonfuckson/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/FPGA/summerschool/Camera_Demo/Camera_Demo/vivado.log
+Vivado journal file location: 	F:/FPGA/summerschool/Camera_Demo/Camera_Demo/vivado.jou
+Engine tmp dir: 	F:/FPGA/summerschool/Camera_Demo/Camera_Demo/.Xil/Vivado-18824-DESKTOP-588F9QA
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/xilinx/Vivado/2018.3
+XILINX_SDK: F:/xilinx/SDK/2018.3
+XILINX_VIVADO: F:/xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 587 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: F:\FPGA\summerschool\Camera_Demo\Camera_Demo\Camera_Demo.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+86637kb) [00:00:17]
+// [Engine Memory]: 631 MB (+509917kb) [00:00:17]
+// [GUI Memory]: 92 MB (+2858kb) [00:00:17]
+// [GUI Memory]: 97 MB (+104kb) [00:00:19]
+// [GUI Memory]: 110 MB (+9057kb) [00:00:20]
+// [Engine Memory]: 665 MB (+2805kb) [00:00:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  5379 ms.
+// Tcl Message: open_project F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'F:/FPGA/summerschool/xiangmu/Camera_Demo/Camera_Demo' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FPGA/summerschool/Camera_Demo/Camera_Demo/IP_Core'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 698 MB. GUI used memory: 55 MB. Current time: 7/30/20, 10:01:31 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 722.570 ; gain = 141.309 
+// [Engine Memory]: 771 MB (+76376kb) [00:00:23]
+// Project name: Camera_Demo; location: F:/FPGA/summerschool/Camera_Demo/Camera_Demo; part: xc7s15ftgb196-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 820 MB (+10954kb) [00:00:31]
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5); // B (D, cp)
+// PAPropertyPanels.initPanels (OV5647_Init.v) elapsed time: 0.2s
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 57 MB. Current time: 7/30/20, 10:02:11 AM CST
+// Elapsed time: 92 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 62 seconds
+selectCodeEditor("Camera_Demo.v", 235, 275); // cl (w, cp)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 286ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3188 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1030 ms. Increasing delay to 3090 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1563 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1028 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 536ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking 788ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6305 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1488 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1088 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2985 ms.
+// Elapsed time: 1159 seconds
+selectCodeEditor("Camera_Demo.v", 224, 204); // cl (w, cp)
+// Elapsed time: 67 seconds
+selectCodeEditor("Camera_Demo.v", 176, 96); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 176, 96, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 176, 96); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 174, 103); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 174, 103, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("Camera_Demo.v", 168, 125); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 168, 125, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("Camera_Demo.v", 193, 169); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 193, 169, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("Camera_Demo.v", 161, 204); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 161, 204, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("Camera_Demo.v", 127, 235); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 127, 235, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("Camera_Demo.v", 160, 208); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 160, 208, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 169, 200); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 169, 200, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Camera_Demo.v", 129, 242); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 129, 242, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// Elapsed time: 61 seconds
+selectCodeEditor("Camera_Demo.v", 194, 311); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 194, 311, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// Elapsed time: 50 seconds
+selectCodeEditor("Camera_Demo.v", 197, 336); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 197, 336, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// Elapsed time: 45 seconds
+selectCodeEditor("Camera_Demo.v", 147, 362); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 147, 362, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 59 MB. Current time: 7/30/20, 10:32:14 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2690 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1247 ms.
+// [GUI Memory]: 117 MB (+1016kb) [00:41:23]
+// Elapsed time: 748 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OV5647_Init.v", 1); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (cp)
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// 'k' command handler elapsed time: 3 seconds
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+dismissDialog("Resetting Runs"); // bx (cp)
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "8", 7); // e (bc, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 8 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 30 10:44:14 2020] Launched synth_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 89 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 30 10:46:02 2020] Launched impl_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 43 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// TclEventType: RUN_FAILED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 36 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1131 ms.
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1592 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1349 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 40 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 2); // k (j, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("Camera_Demo.v", 149, 270); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 149, 270, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 150, 285); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 150, 285, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 75 seconds
+selectCodeEditor("Camera_Demo.v", 545, 245); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 486, 614); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("Camera_Demo.v", 227, 244); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 227, 244, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 263, 336); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 263, 336, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 264, 356); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 264, 356, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 225, 377); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 225, 377, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 229, 406); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 229, 406, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 178, 429); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 178, 429, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 177, 450); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 177, 450, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 231, 469); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 231, 469, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 245, 500); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 245, 500, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 249, 518); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 249, 518, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 257, 541); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 257, 541, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 211, 568); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 211, 568, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 211, 627); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 211, 627, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("Camera_Demo.v", 212, 293); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 212, 293, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 463, 165); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 77, 206); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 69, 221); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 104, 237); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 104, 237, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("Camera_Demo.v", 220, 400); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 147, 405, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("Camera_Demo.v", 66, 146); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 115, 156); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 115, 156, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 558); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 558, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 212, 408); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 212, 408, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("Camera_Demo.v", 97, 320); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 94, 321); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 94, 321, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 93, 322); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 95, 322); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 76, 317); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 371, 452); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 133); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 133, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 640, 458); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 249, 399); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 249, 399, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 364, 422); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 233, 163); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 233, 163, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 240, 443); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 240, 443, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 237, 147); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 237, 147, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 248, 426); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 248, 426, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 191, 203); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 191, 203, false, false, false, false, true); // cl (w, cp) - Double Click
+// [GUI Memory]: 127 MB (+4704kb) [00:52:34]
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 480); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 480, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("Camera_Demo.v", 296, 506); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 180, 492); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 180, 492, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 284, 364); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 74, 331); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 193, 429); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 193, 429, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("Camera_Demo.v", 19, 187); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 41, 192); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 23, 210); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 76, 183); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 72, 189); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 69, 223); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 163, 284); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 163, 284, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 37 seconds
+selectCodeEditor("Camera_Demo.v", 178, 261); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 178, 261, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 226, 171); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 214, 191); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 135, 212); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 135, 212); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 135, 212, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("Camera_Demo.v", 68, 354); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 354, 406); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("Camera_Demo.v", 268, 332); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("Camera_Demo.v", 184, 545); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 184, 545, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 19 seconds
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectCodeEditor("Camera_Demo.v", 707, 321); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 707, 321, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("Camera_Demo.v", 72, 225); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 64, 216); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 175, 248); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 57, 259); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 50, 254); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 64, 266); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 239, 284); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("Camera_Demo.v", 58, 235); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("Camera_Demo.v", 150, 286); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 150, 286, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 32 seconds
+selectCodeEditor("Camera_Demo.v", 214, 214); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 214, 214, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("Camera_Demo.v", 181, 242); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 181, 242, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 48 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 60 MB. Current time: 7/30/20, 11:02:12 AM CST
+// Elapsed time: 1194 seconds
+selectCodeEditor("Camera_Demo.v", 159, 225); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 193, 241); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 193, 241, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 212, 269); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 212, 269, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("Camera_Demo.v", 142, 314); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 142, 314, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 202, 339); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 202, 339, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 180, 358); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 180, 358, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 179, 375); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 179, 375, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("Camera_Demo.v", 164, 406); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 164, 406, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("Camera_Demo.v", 223, 173); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 223, 173, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 58 seconds
+selectCodeEditor("Camera_Demo.v", 187, 377); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 187, 377, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 89 seconds
+selectCodeEditor("Camera_Demo.v", 220, 75); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 75, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 48 seconds
+selectCodeEditor("Camera_Demo.v", 205, 358); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 197, 430); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 197, 430, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 152, 157); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 152, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 205, 358); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 205, 358, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 431, 337); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("Camera_Demo.v", 42, 199); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 332, 209); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 519, 341); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 478, 180); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 310, 220); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 310, 220, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 236, 258); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 236, 258, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("Camera_Demo.v", 233, 65); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 233, 65, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 225, 339); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 225, 339, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 237, 88); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 237, 88, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 268, 362); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 268, 362, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 269, 371); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 269, 371, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 237, 116); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 237, 116, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 237, 106); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 237, 106, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 250, 377); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 250, 377, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 399); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 220, 399, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 207, 131); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 207, 131, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 174, 131); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 174, 131, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 192, 292); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 192, 292, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 224, 394); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 224, 399); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 224, 399, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 103, 383); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("Camera_Demo.v", 168, 155); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 168, 155, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("Camera_Demo.v", 66, 281); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("Camera_Demo.v", 63, 88); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 62, 118); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 169, 193); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 177, 224); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 177, 224, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 48 seconds
+selectCodeEditor("Camera_Demo.v", 94, 345); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 37, 134, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("Camera_Demo.v", 67, 334); // cl (w, cp)
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 189, 217); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 189, 217, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("Camera_Demo.v", 202, 385); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 202, 385, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("Camera_Demo.v", 188, 228); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 188, 228, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 139, 355); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 139, 355, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 170, 355); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 188, 376); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 188, 376, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("Camera_Demo.v", 160, 404); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 160, 404, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 56 seconds
+selectCodeEditor("Camera_Demo.v", 268, 168); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 268, 168, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("Camera_Demo.v", 197, 238); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 197, 238, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 191, 336); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 191, 336, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 59 MB. Current time: 7/30/20, 11:32:12 AM CST
+// Elapsed time: 33 seconds
+selectCodeEditor("Camera_Demo.v", 159, 102); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 159, 102, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 169, 417); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 169, 417, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 198, 61); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 198, 61, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 212, 60); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 212, 60, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 197, 389); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 197, 389, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 198, 83); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 198, 83, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 194, 412); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 194, 412, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 176, 426); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 176, 426, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 274, 110); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 274, 110, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'c'); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 180, 368); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 180, 368, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Camera_Demo.v", 176, 356); // cl (w, cp)
+selectCodeEditor("Camera_Demo.v", 176, 356, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "Camera_Demo.v", 'v'); // cl (w, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : xil_defaultlib.Image_Process]", 4, false); // B (D, cp)
+// Elapsed time: 17 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+dismissDialog("Add Sources"); // c (cp)
+// Elapsed time: 60 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// WARNING: HEventQueue.dispatchEvent() is taking  1007 ms.
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 25 seconds
+setFileChooser("F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/new/Delay_Signal.v");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 11 seconds
+setFileChooser("F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/new/Edge_Check.v");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+setFileChooser("F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/new/Image_Process_Edge.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 51 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/new/Delay_Signal.v F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/new/Edge_Check.v F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/new/Image_Process_Edge.v} 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 83 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : Image_Process (Image_Process_Edge.v)]", 4); // B (D, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+setFileChooser("F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/new/RGB_To_Gray.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 7 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/new/RGB_To_Gray.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : Image_Process (Image_Process_Edge.v), Edge_Check0 : Edge_Check (Edge_Check.v)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : Image_Process (Image_Process_Edge.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : Image_Process (Image_Process_Edge.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : Image_Process (Image_Process_Edge.v)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : Image_Process (Image_Process_Edge.v), Edge_Check0 : Edge_Check (Edge_Check.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : Image_Process (Image_Process_Edge.v), Edge_Check0 : Edge_Check (Edge_Check.v)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("Edge_Check.v", 110, 353); // cl (w, cp)
+typeControlKey((HResource) null, "Edge_Check.v", 'c'); // cl (w, cp)
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // z (L, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1537 ms.
+// bx (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bx (SwingUtilities.SharedOwnerFrame)
+// Elapsed time: 20 seconds
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // O (Q, cp)
+// PAPropertyPanels.initPanels (F:/xilinx/Vivado/2018.3/data/) elapsed time: 0.3s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Image_Process_Edge : Image_Process (Image_Process_Edge.v)]", 4); // B (D, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RAM-based Shift Register ;  ; Production ; Included ; xilinx.com:ip:c_shift_ram:12.0", 3, "RAM-based Shift Register", 0, true); // O (Q, cp) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RAM-based Shift Register ;  ; Production ; Included ; xilinx.com:ip:c_shift_ram:12.0", 3, "RAM-based Shift Register", 0, true, false, false, false, false, true); // O (Q, cp) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cp):  Customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+// r (cp): Customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1476 ms.
+dismissDialog("Customize IP"); // l (cp)
+setText("Component Name", "Shift_Line"); // z (U, r)
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g (as, r): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Customize IP"); // r (cp)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name c_shift_ram -vendor xilinx.com -library ip -version 12.0 -module_name Shift_Line -dir f:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Component_Name {Shift_Line} CONFIG.Width {8} CONFIG.Depth {640} CONFIG.DefaultData {00000000} CONFIG.AsyncInitVal {00000000} CONFIG.SyncInitVal {00000000}] [get_ips Shift_Line] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files f:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Shift_Line/Shift_Line.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Shift_Line'... 
+// aI (cp): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// Tcl Message: update_compile_order -fileset sources_1 
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  f:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Shift_Line/Shift_Line.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Shift_Line'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Shift_Line'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Shift_Line'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all Shift_Line] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Shift_Line/Shift_Line.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Shift_Line/Shift_Line.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 8 Shift_Line_synth_1 
+// Tcl Message: [Thu Jul 30 11:39:03 2020] Launched Shift_Line_synth_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/Shift_Line_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 8); // B (D, cp)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 6); // B (D, cp)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 134 MB (+296kb) [01:38:35]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 30 11:39:45 2020] Launched Shift_Line_synth_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/Shift_Line_synth_1/runme.log [Thu Jul 30 11:39:45 2020] Launched synth_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 75 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// TclEventType: RUN_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1313 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 869 MB. GUI used memory: 131 MB. Current time: 7/30/20, 11:41:08 AM CST
+// [Engine Memory]: 869 MB (+8695kb) [01:40:01]
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), clk_10 : clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), clk_10 : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// [Engine Memory]: 932 MB (+19826kb) [01:40:09]
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (O)
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2317 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 987 MB. GUI used memory: 86 MB. Current time: 7/30/20, 11:41:25 AM CST
+dismissDialog("Re-customize IP"); // O (cp)
+// [Engine Memory]: 987 MB (+9133kb) [01:40:17]
+// TclEventType: RUN_FAILED
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 12 seconds
+selectRadioButton((HResource) null, "PLL"); // cO
+// WARNING: HEventQueue.dispatchEvent() is taking  1357 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (C, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "MMCM"); // cO
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+selectCheckBox((HResource) null, "clk_out3", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1371 ms.
+setText("CLKOUT3 REQUESTED OUT FREQ", "50.000"); // z (cU)
+selectCheckBox((HResource) null, "clk_out4", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1266 ms.
+// [GUI Memory]: 144 MB (+3297kb) [01:40:48]
+setText("CLKOUT4 REQUESTED OUT FREQ", "10.000"); // z (cU, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (C, r)
+// Elapsed time: 18 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+selectCheckBox((HResource) null, "reset", false); // g (bL, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "locked", false); // g (bL, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 68 seconds
+selectCheckBox((HResource) null, "reset", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "locked", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// [GUI Memory]: 164 MB (+13945kb) [01:42:32]
+// aI (cp): Generate Output Products: addNotify
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 451ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all clk_wiz_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run clk_wiz_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 8 clk_wiz_0_synth_1 
+// Tcl Message: [Thu Jul 30 11:43:52 2020] Launched clk_wiz_0_synth_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/clk_wiz_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 13 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+// ah (cp): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Thu Jul 30 11:44:09 2020] Launched clk_wiz_0_synth_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/clk_wiz_0_synth_1/runme.log [Thu Jul 30 11:44:09 2020] Launched synth_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1828 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,012 MB. GUI used memory: 97 MB. Current time: 7/30/20, 11:44:38 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1127 ms.
+// Elapsed time: 30 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), camera_clock : clk_wiz_1 (clk_wiz_1.xci)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), camera_clock : clk_wiz_1 (clk_wiz_1.xci)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v), camera_clock : clk_wiz_1 (clk_wiz_1.xci)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Re-customize IP"); // O (cp)
+// TclEventType: RUN_COMPLETED
+dismissDialog("Re-customize IP"); // r (cp)
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 70 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 30 11:46:08 2020] Launched impl_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 172 MB (+31kb) [01:48:01]
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 1039 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 30 12:03:33 2020] Launched impl_1... Run output will be captured here: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  75920 ms.
+// Thread: hw_ila_monitor
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: AWT-Windows
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Thread-1
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: Refresh Filesets Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.w.construct(SourceFile:2446)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Monitor File Timestamp Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.views.e.construct(SourceFile:231)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:99)
+// Thread: Timer-2
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: AWT-EventQueue-0
+// 	at java.desktop@9.0.4/sun.awt.windows.WGlobalCursorManager.findHeavyweightUnderCursor(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.GlobalCursorManager._updateCursor(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.GlobalCursorManager.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.windows.WComponentPeer.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Container.validate(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.validateInvalidComponents(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.WaitDispatchSupport$2.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.WaitDispatchSupport$4.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.WaitDispatchSupport$4.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.desktop@9.0.4/java.awt.WaitDispatchSupport.enter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Dialog.show(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.show(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.setVisible(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Window.setVisible(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Dialog.setVisible(Unknown Source)
+// 	at ui.b.c.g.setVisible(SourceFile:917)
+// 	at ui.b.c.g.a(SourceFile:330)
+// 	at ui.b.c.g.a(SourceFile:205)
+// 	at ui.b.c.g.gH(SourceFile:340)
+// 	at ui.b.G.ah.dGc(SourceFile:687)
+// 	at ui.b.G.ah.cGz(SourceFile:669)
+// 	at ui.b.G.ah$$Lambda$272/1415261308.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Thread: Attach Listener
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at com.jidesoft.plaf.synthetica.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:99)
+// Thread: Monitor File Timestamp Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.views.e.construct(SourceFile:231)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Monitor HEventQueue
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.exx(SourceFile:484)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.b(SourceFile:1030)
+// 	at ui.PlanAhead.jswMain(SourceFile:1084)
+// Thread: Monitor File Timestamp Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.views.e.construct(SourceFile:231)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Monitor File Timestamp Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.views.e.construct(SourceFile:231)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Process Messages
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:132)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Update Runs Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.A.construct(SourceFile:311)
+// 	at ui.frmwork.y.run(SourceFile:204)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Swing-Shell
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.shell.Win32ShellFolderManager2$ComInvoker$1.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Image Animator 3
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.image.GifFrame.dispose(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.GifImageDecoder.readImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.GifImageDecoder.produceImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.InputStreamImageSource.doFetch(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageFetcher.fetchloop(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.image.ImageFetcher.run(Unknown Source)
+// Thread: Timer-0
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: Signal Dispatcher
+// Thread: Timer-4
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1846)
+// Thread: Timer-3
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Elapsed time: 356 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a (Q, ah)
+// WARNING: HEventQueue.dispatchEvent() is taking  57592 ms.

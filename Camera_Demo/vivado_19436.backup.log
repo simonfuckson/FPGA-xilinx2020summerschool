@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 20:17:31 2020
+# Process ID: 19436
+# Current directory: F:/FPGA/summerschool/Camera_Demo/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18120 F:\FPGA\summerschool\Camera_Demo\Camera_Demo\Camera_Demo.xpr
+# Log file: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/vivado.log
+# Journal file: F:/FPGA/summerschool/Camera_Demo/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FPGA/summerschool/Camera_Demo/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 692.309 ; gain = 117.359
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 873.926 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/Digilent JTAG-SMT2
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/Digilent JTAG-SMT2.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Common 17-165] Too many positional options when parsing '-exp', please type 'close_hw_target -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing '-exp', please type 'close_hw_target -help' for usage info.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 20:45:24 2020...

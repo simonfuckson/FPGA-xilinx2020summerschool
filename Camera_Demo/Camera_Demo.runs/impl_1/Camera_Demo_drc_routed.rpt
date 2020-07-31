@@ -1,0 +1,54 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Jul 30 11:48:56 2020
+| Host         : DESKTOP-588F9QA running 64-bit major release  (build 9200)
+| Command      : report_drc -file Camera_Demo_drc_routed.rpt -pb Camera_Demo_drc_routed.pb -rpx Camera_Demo_drc_routed.rpx
+| Design       : Camera_Demo
+| Device       : xc7s15ftgb196-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| BUFC-1      | Warning  | Input Buffer Connections                                    | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer Camera_IIC_SDA_IOBUF/IBUF (in Camera_IIC_SDA_IOBUF macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/CLK is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/Image_Line_Buffer00_i_4/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/Image_Line_Buffer00_i_4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT MIPI_Trans_Driver/Driver_Bayer_To_RGB0/Image_Line_Buffer00_i_4 is driving clock pin of 832 cells. This could lead to large hold time violations. Involved cells are:
+Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[0].srl_sig_reg[127]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[0].srl_sig_reg[128], Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[0].srl_sig_reg[31]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[0].srl_sig_reg[63]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[0].srl_sig_reg[95]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[1].srl_sig_reg[127]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[1].srl_sig_reg[128], Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[1].srl_sig_reg[31]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[1].srl_sig_reg[63]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[1].srl_sig_reg[95]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[2].srl_sig_reg[127]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[2].srl_sig_reg[128], Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[2].srl_sig_reg[31]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[2].srl_sig_reg[63]_srl32, Image_Process_Edge/Edge_Check0/Image_Line_Buffer00/U0/i_synth/i_bb_inst/f1.many_clbs.gen_clb_shreg[1].gen_width[2].srl_sig_reg[95]_srl32 (the first 15 of 832 listed)
+Related violations: <none>
+
+

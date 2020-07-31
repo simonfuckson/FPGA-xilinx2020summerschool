@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 14:33:11 2020
+# Process ID: 14192
+# Current directory: F:/FPGA/summerschool/Camera_Demo/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15376 F:\FPGA\summerschool\Camera_Demo\Camera_Demo\Camera_Demo.xpr
+# Log file: F:/FPGA/summerschool/Camera_Demo/Camera_Demo/vivado.log
+# Journal file: F:/FPGA/summerschool/Camera_Demo/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {F:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]

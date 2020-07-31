@@ -1,0 +1,286 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Jul 30 11:49:03 2020
+| Host         : DESKTOP-588F9QA running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Camera_Demo_methodology_drc_routed.rpt -pb Camera_Demo_methodology_drc_routed.pb -rpx Camera_Demo_methodology_drc_routed.rpx
+| Design       : Camera_Demo
+| Device       : xc7s15ftgb196-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 48
++-----------+----------+----------------------------------------------------+------------+
+| Rule      | Severity | Description                                        | Violations |
++-----------+----------+----------------------------------------------------+------------+
+| CKLD-1    | Warning  | Clock Net has non-BUF driver and too many loads    | 1          |
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-6  | Warning  | No common primary clock between related clocks     | 4          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                  | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                   | 1          |
+| TIMING-14 | Warning  | LUT on the clock tree                              | 2          |
+| TIMING-16 | Warning  | Large setup violation                              | 27         |
+| TIMING-18 | Warning  | Missing input or output delay                      | 7          |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin          | 1          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects        | 1          |
+| REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF                  | 2          |
++-----------+----------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CKLD-1#1 Warning
+Clock Net has non-BUF driver and too many loads  
+Clock net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/CLK is not driven by a Clock Buffer and has more than 512 loads. Driver(s): MIPI_Trans_Driver/Driver_Bayer_To_RGB0/Image_Line_Buffer00_i_4/O
+Related violations: <none>
+
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock MIPI_Trans_Driver/camera_clock/inst/clk_in1 is defined downstream of clock pclk and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0 and clk_out1_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0] -to [get_clocks clk_out1_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0_1 and clk_out1_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0_1] -to [get_clocks clk_out1_clk_wiz_0]
+Related violations: <none>
+
+TIMING-6#3 Warning
+No common primary clock between related clocks  
+The clocks clk_out2_clk_wiz_0 and clk_out2_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out2_clk_wiz_0] -to [get_clocks clk_out2_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#4 Warning
+No common primary clock between related clocks  
+The clocks clk_out2_clk_wiz_0_1 and clk_out2_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out2_clk_wiz_0_1] -to [get_clocks clk_out2_clk_wiz_0]
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.BUFGCTRL_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#2 Warning
+LUT on the clock tree  
+The LUT MIPI_Trans_Driver/Driver_Bayer_To_RGB0/Image_Line_Buffer00_i_4 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -9.189 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[0]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -9.338 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[1]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -9.357 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/pDataOut_1_reg[0]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -9.361 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[2]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -9.361 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[3]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -9.363 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[1]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -9.364 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/pDataOut_1_reg[7]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -9.369 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[6]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -9.373 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[3]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -9.373 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/pDataOut_1_reg[4]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -9.375 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[4]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -9.377 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[2]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -9.385 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[0]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -9.386 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/n1d_1_reg[3]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -9.387 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/n1d_1_reg[3]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -9.387 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/pDataOut_1_reg[1]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -9.388 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[7]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -9.389 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[6]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -9.394 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[7]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -9.397 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[4]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -9.399 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[2].DataEncoder/pDataOut_1_reg[5]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -9.415 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/pDataOut_1_reg[6]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -9.425 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOut_1_reg[5]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -9.437 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -9.529 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/pDataOut_1_reg[3]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -9.543 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[1].DataEncoder/pDataOut_1_reg[2]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -9.547 ns between Image_Process_Edge/Edge_Check0/Matrix_Edge_Check_Data_reg[2]/C (clocked by clk_out1_clk_wiz_1) and Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/n1d_1_reg[3]/D (clocked by clk_out1_clk_wiz_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on i_camera_iic_sda relative to clock(s) i_clk, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on i_rst relative to clock(s) i_clk, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on i_rx_data_n[0] relative to clock(s) dphy_hs_clock_p
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on i_rx_data_n[1] relative to clock(s) dphy_hs_clock_p
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on i_rx_data_p[0] relative to clock(s) dphy_hs_clock_p
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on i_rx_data_p[1] relative to clock(s) dphy_hs_clock_p
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on o_camera_iic_scl relative to clock(s) i_clk, sys_clk_pin
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock MIPI_Trans_Driver/camera_clock/inst/clk_in1 is created on an inappropriate internal pin MIPI_Trans_Driver/camera_clock/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '7' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: f:/FPGA/summerschool/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc (Line: 5)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+MIPI_Trans_Driver/Data_Read/U0/bits_gen[0].line_if_inst/ISERDESE2_inst: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+MIPI_Trans_Driver/Data_Read/U0/bits_gen[1].line_if_inst/ISERDESE2_inst: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+
